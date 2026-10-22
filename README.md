@@ -101,6 +101,7 @@ Download the new version and copy it over your folder, **except** `plugin/`, `te
 | `Local's PHP ... not found` | Set `LOCAL_PHP` to the `php` binary of the site's PHP version. |
 | `Could not read the MySQL port` | Set `LOCAL_DB_PORT` (Local > site > Database). |
 | `needs the plugin "x", but it is not installed` | Install that plugin on the site, or remove it from `requiredPlugins`. |
+| `EADDRINUSE ... 9323` | A report or UI window is already open. `npm run report` and `npm run test:ui` pick a free port automatically; this only happens if you call `npx playwright show-report` directly (add `--port 0`, or close the old one). |
 | Not using LocalWP | Not supported by setup. You can still write `.env` by hand (see `.env.example`) and create the `e2e_admin` user yourself. |
 
 ## Layout

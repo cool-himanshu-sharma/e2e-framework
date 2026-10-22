@@ -6,9 +6,9 @@
     "setup": "node setup/setup.mjs",
     "local:fixture": "node setup/setup.mjs --fixture-only",
     "test": "playwright test",
-    "test:ui": "playwright test --ui",
+    "test:ui": "playwright test --ui --port 0",
     "test:headed": "playwright test --headed",
-    "report": "playwright show-report"
+    "report": "playwright show-report --port 0"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.0",
